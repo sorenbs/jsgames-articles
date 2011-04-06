@@ -13,7 +13,7 @@ pre .atn, code .atn { color: #bdb76b; } /* html/xml attribute name  - khaki */
 pre .atv, code .atv { color: #65B042; } /* html/xml attribute value - green */
 pre .dec, code .dec { color: #3387CC; } /* decimal - blue */
 
-pre.prettyprint, code.prettyprint {
+pre.prettyprint, code.prettyprint, .prettyprint {
 ﻿  background-color: #000;
 ﻿  -moz-border-radius: 8px;
 ﻿  -webkit-border-radius: 8px;
