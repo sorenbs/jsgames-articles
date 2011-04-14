@@ -1,9 +1,10 @@
-﻿
+﻿h1. Creating your first Crafty game
+
     So - let's get going!
 
     First you need to grab the "crafty.js":crafty/crafty.0.4.NEXT.js file and put it in your working directory.
     We are going to use some features that are not yet in the release version, so i have compiled a custom version for you. 
-    We will be working on a uncompressed version to make it easier to dig in and se what is going on. When the game is to be released we can replace it with a minified version that is much smaller.
+    We will be working on a uncompressed version to make it easier to dig in and se what is going on. When the game is ready to be released we can replace it with a minified version that is much smaller.
 
     Now create the html file that will host the game:
 
@@ -36,7 +37,7 @@ window.onload = function () {
 };
 </code>
 
-If you are familiar with javascript you will recognise this way of declaring a function that will get executed when the browser is done loading the page. In that way Crafty is no different from any other javascript yoy would wtite.
+If you are familiar with javascript you will recognise this way of declaring a function that will get executed when the browser is done loading the page. In that way Crafty is no different from any other javascript you would write.
 Crafty.init(FPS, with, height) is where Crafty does it's initialisation stuff that is needed before the game can run.
 We are going to create a tile-based game so the with and height is set to multiples of 16 which is the size of the tiles.
 
@@ -90,7 +91,7 @@ h2. Components
 
 In programming it is quite usual to use an approach called Object Oriented Programming, OOP where code is organised in hierachies of classes that can inherit functionality from ancestors while providing new functionality itself. Flash adobted this approach with AS3 released some years ago. This way of organising code has some problems though and hence Crafty takes a different approach.
 
-Crafty provides a system very simmilar to what is known as mixins, multiple inheritance or traits depending on the specific language. An easy way to think about this is that an entity (like say the player or an enemy) is composed of many reusable components that enhances the entity with some new functionality. One way to add components to an entity is to call Crafty.e(string) which will create a new entity with the functionality provided by the components specified in the string parameter. 
+Crafty provides a system very simmilar to what is known as mixins, multiple inheritance or traits depending on the specific language. An easy way to think about this is that an entity (like say the player or an enemy) is composed of many reusable components that enhances the entity with some new functionality. One way to add components to an entity is to call Crafty.e(string) which will create a new entity with the functionality provided by the comma-separated list of components specified in the string parameter. 
 
 So what we did in the loading scene to get the background is we created an entity with the components 2D, DOM and Text. 2D provides functionality around positioning in 2d space(x, y, etc). DOM provides functionality that will automatically draw the entity to the screen using dom elements, and Text... i think you guessed it. These components are defined in the crafty.js file and you can go have a look if you are curious, but we will get back to how these components are created in a later article.
 
