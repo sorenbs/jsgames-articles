@@ -1,4 +1,4 @@
-﻿h1. Tiles, spritemap and animations
+﻿h2. Tiles, spritemap and animations
 
 Take a look at our sprite sheet:
 
@@ -91,11 +91,11 @@ We will finish this article by adding a grid of bushes in true bomberman style:
 
 </code>
 
-Have a look at our wonderfuææ garden:
+Have a look at our wonderfull garden:
 
 !bananabomber-1.png!
 
-% is the modulo operator. It simply divides the left operand with the right operand and returns the remainder. Thus (i % 2 === 0) evaluates to true when i is even. 
+&#37; is the modulo operator. It simply divides the left operand with the right operand and returns the remainder. Thus (i % 2 === 0) evaluates to true when i is even. 
 
 If you wonder why i use === instead of just == here is an explanation.
 The normal equality operator == does type coersion before checking for equality. This means that all the following expressions return true
