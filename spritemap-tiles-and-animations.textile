@@ -103,13 +103,9 @@ The normal equality operator == does type coercion before checking for equality.
 
 <code>
     ('5' == 5)
-
     (0 == '')
-
     (0 == false)
-
     (false == undefined)
-
     ("\r\n" == 0)
 </code> 
 

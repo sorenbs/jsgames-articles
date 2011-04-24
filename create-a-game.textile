@@ -1,18 +1,17 @@
 ﻿h2. Creating your first Crafty game
 
-    So - let's get going!
+So - let's get going!
 
-    First you need to grab the "crafty.js":crafty/crafty.0.4.NEXT.js file and put it in your working directory.
-    We are going to use some features that are not yet in the release version, so i have compiled a custom version for you. 
-    We will be working on a uncompressed version to make it easier to dig in and se what is going on. When the game is ready to be released we can replace it with a minified version that is much smaller.
+First you need to grab the latest release of the "crafty":http://www.craftyjs.com engine. At the moment this is 0.4.2. Put the crafty.js file in your working directory.
+We will be working on a uncompressed version to make it easier to dig in and se what is going on. When the game is ready to be released we can replace it with a minified version that is much smaller.
 
-    Now create the html file that will host the game:
+Now create the html file that will host the game:
 
 <code>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <script type="text/javascript" src="crafty.0.4.NEXT.js"></script>
+    <script type="text/javascript" src="crafty.js"></script>
     <script type="text/javascript" src="game.js"></script>
     <title>My Crafty Game</title>
     <style>
