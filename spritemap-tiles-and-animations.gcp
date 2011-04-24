@@ -75,6 +75,7 @@ Let's get some more interesting stuff on the stage. Like flowers dancing in the 
                 }
 </code>
 
+
 The flower component adds the flower sprite to the entity. The Animate component adds *surprise, surprise* animation capabilities to the flower. This is used by calling the animate() function on the entity. The first call creates an animation called wind that starts in column 0, row 1 (just as the flower sprite itself) and spans 3 columns. To learn about how to setup more advanced animations have a look in the documentation. 
 The second call starts the animation, specifying that it should last 80 frames and play forever(-1).
 
