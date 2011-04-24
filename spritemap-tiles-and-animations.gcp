@@ -75,6 +75,22 @@ Let's get some more interesting stuff on the stage. Like flowers dancing in the 
                 }
 </code>
 
+@
+                //generate some nice flowers within the boundaries of the outer bushes
+                if (i > 0 && i < 24 && j > 0 && j < 20
+                        && Crafty.randRange(0, 50) > 30
+                        && !(i === 1 && j >= 16)
+                        && !(i === 23 && j <= 4)) {
+                    var f = Crafty.e("2D, DOM, flower, solid, Animate, explodable")
+                            .attr({ x: i * 16, y: j * 16, z: 1000 })
+                            .animate("wind", 0, 1, 3)
+                            .animate('wind', 80, -1)
+                            .bind('explode', function() {
+                                this.destroy();
+                            });
+                }
+@
+
 The flower component adds the flower sprite to the entity. The Animate component adds *surprise, surprise* animation capabilities to the flower. This is used by calling the animate() function on the entity. The first call creates an animation called wind that starts in column 0, row 1 (just as the flower sprite itself) and spans 3 columns. To learn about how to setup more advanced animations have a look in the documentation. 
 The second call starts the animation, specifying that it should last 80 frames and play forever(-1).
 
@@ -95,7 +111,7 @@ Have a look at our wonderfull garden:
 
 !bananabomber-1.png!
 
-Note: %% is the modulo operator. It simply divides the left operand with the right operand and returns the remainder. Thus (i %% 2 === 0) evaluates to true when i is even. 
+Note: % is the modulo operator. It simply divides the left operand with the right operand and returns the remainder. Thus (i % 2 === 0) evaluates to true when i is even. 
 
 If you wonder why i use === instead of just == here is an explanation.
 The normal equality operator == does type coercion before checking for equality. This means that all the following expressions return true
