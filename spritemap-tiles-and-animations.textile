@@ -112,3 +112,4 @@ The normal equality operator == does type coercion before checking for equality.
 The first one is sort of okay, but the rest will come and bite you some day. That is why the father of javascript, Douglas Crockford recommends using the strict equality operator, === that will never say values of different types are equal.
 
 Next up is a little detour into the wonders of javascript debugging in the article "Debugging javascript applications":debugging-javascript-applications
+
