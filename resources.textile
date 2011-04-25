@@ -1,0 +1,72 @@
+﻿h2. Resources for javascript games
+
+*Engines*
+
+"Crafty":http://craftyjs.com/ open source
+
+"Gamequery":http://gamequery.onaluf.org/ open source
+
+"Render Engine":http://www.renderengine.com/ open source
+
+"ImpactJs":http://impactjs.com/ 100$
+
+"Rocket Engine":http://rocketpack.fi/engine/ closed, in development
+
+"three":https://github.com/mrdoob/three.js open source 3D
+
+"Aves Engine":http://www.insidesocialgames.com/2010/09/24/zynga-acquires-dextrose-aves-engine-html5/ owned by zynga
+
+*services*
+
+"tapjs":http://tapjs.com/ hosting platform, online storage, leaderboards
+
+"Playtomic":http://playtomic.com/api/html5 leader boeards, analytics online storage
+
+"PlayerIO":http://playerio.com/ multiplayer, payments, online storage [Flash-only]
+
+*Art*
+
+"Lots of art":http://opengameart.org/
+
+*Articles*
+
+"Rewriting a flash game to use Crafty.js":http://joshblog.net/2011/01/11/flash-to-html5-javascript-game-conversion-gridshock/
+
+*Video*
+
+"Open Web Gaming Special conference":http://lanyrd.com/2010/gameonlondon/schedule/
+
+"Paul Bakaus on javescript game engines in general and demo of the Aves engine":http://www.youtube.com/watch?v=_RRnyChxijA
+
+"Paul Bakaus again":http://jsconfeu.blip.tv/file/4244325/
+
+*Discussions*
+
+"html5-vs-flash":https://www.mochimedia.com/community/forum/topic/html5-vs-flash
+
+*Twitter*
+
+"@pbakaus":http://twitter.com/#!/pbakaus creator of Aves engine
+
+"@robhawkes":http://twitter.com/#!/robhawkes at Mozilla. Spaeking and writing.
+
+"@craftyjs"http://twitter.com/#!/craftyjs the Crafty engine
+
+*Conferences*
+
+"lanyrd":http://lanyrd.com is awesome for tracking conferences and spotting interesting new ones. Based on Twitter connections they make suggestions.
+
+"GDC Online":http://lanyrd.com/2011/gdconline/ US
+
+"JSConf":http://lanyrd.com/2011/jsconf/ US
+
+"onGameStart":http://lanyrd.com/2011/ongamestart/ Poland
+
+*Games*
+
+"mozillalabs":https://gaming.mozillalabs.com/games/winners
+
+"html5games":http://html5games.com/
+
+"html5contest":http://www.html5contest.com/
+

@@ -3,7 +3,7 @@
 So - let's get going!
 
 First you need to grab the latest release of the "crafty":http://www.craftyjs.com engine. At the moment this is 0.4.2. Put the crafty.js file in your working directory.
-We will be working on a uncompressed version to make it easier to dig in and se what is going on. When the game is ready to be released we can replace it with a minified version that is much smaller.
+We will be working on a uncompressed version to make it easier to dig in and see what is going on. When the game is ready to be released we can replace it with a minified version that is much smaller.
 
 Now create the html file that will host the game:
 
