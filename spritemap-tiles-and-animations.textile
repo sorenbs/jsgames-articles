@@ -113,17 +113,18 @@ The first one is sort of okay, but the rest will come and bite you some day. Tha
 
 Next up is a little detour into the wonders of javascript debugging in the article "Debugging javascript applications":debugging-javascript-applications
 
+
 h2. Git Code Press - Blogging that sucks less
- 
+
 Create a github repository and add a post-receive webhook that points to gitcp.com/github
- 
+
 !images/admin.png!
- 
+
 !images/post-receive.png!
- 
+
 Now push a .textile file. In a moment your blog will be available hot of the press...
- 
-For inspiration have a look at some sample &quot;markup&quot;:https://github.com/sorenbs/jsgames-articles/raw/master/spritemap-tiles-and-animations.textile and the &quot;result&quot;:http://localhost:8080/sorenbs/jsgames-articles/spritemap-tiles-and-animations
-. For any questions turn to the &quot;mailing list&quot;:https://groups.google.com/forum/#!forum/git-code-press
- 
+
+For inspiration have a look at some sample "markup":https://github.com/sorenbs/jsgames-articles/raw/master/spritemap-tiles-and-animations.textile and the "result":http://localhost:8080/sorenbs/jsgames-articles/spritemap-tiles-and-animations
+. For any questions turn to the "mailing list":https://groups.google.com/forum/#!forum/git-code-press
+
 h2. Code Collections
