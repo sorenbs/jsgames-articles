@@ -31,13 +31,13 @@ The game skeleton is pretty simple:
 <code>
 window.onload = function () {
     //start crafty
-    Crafty.init(50, 400, 336);
-    Crafty.canvas();
+    Crafty.init(400, 336);
+    //Crafty.canvas();
 };
 </code>
 
 If you are familiar with javascript you will recognise this way of declaring a function that will get executed when the browser is done loading the page. In that way Crafty is no different from any other javascript you would write.
-Crafty.init(FPS, with, height) is where Crafty does it's initialisation stuff that is needed before the game can run.
+Crafty.init(with, height) is where Crafty does it's initialisation stuff that is needed before the game can run.
 We are going to create a tile-based game so the with and height is set to multiples of 16 which is the size of the tiles.
 
 There are two ways of getting images onto the screen: 
