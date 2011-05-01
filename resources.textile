@@ -50,7 +50,7 @@
 
 "@robhawkes":http://twitter.com/#!/robhawkes at Mozilla. Spaeking and writing.
 
-"@craftyjs"http://twitter.com/#!/craftyjs the Crafty engine
+"@craftyjs":http://twitter.com/#!/craftyjs the Crafty engine
 
 *Conferences*
 
