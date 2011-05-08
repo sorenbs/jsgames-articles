@@ -40,6 +40,8 @@
 
 "Paul Bakaus again":http://jsconfeu.blip.tv/file/4244325/
 
+"particles, smoke, animations":http://vimeo.com/22549391
+
 *Discussions*
 
 "html5-vs-flash":https://www.mochimedia.com/community/forum/topic/html5-vs-flash

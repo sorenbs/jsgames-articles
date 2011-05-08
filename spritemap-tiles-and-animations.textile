@@ -52,7 +52,7 @@ To provide a closed playing field for the game we add some bushes around the edg
 
 <code>
                 //create a fence of bushes
-                if(i = == 0 || i = == 24 || j = == 0 || j = == 20)
+                if(i === 0 || i === 24 || j === 0 || j === 20)
                     Crafty.e("2D, DOM, solid, bush" + Crafty.randRange(1, 2))
                     .attr({ x: i * 16, y: j * 16, z: 2 });
 </code>
