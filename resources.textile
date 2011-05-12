@@ -30,7 +30,7 @@
 
 "Lots of art":http://opengameart.org/
 
-"Cool collection of game tiles"http://www.lostgarden.com/search/label/free%20game%20graphics
+"Cool collection of game tiles":http://www.lostgarden.com/search/label/free%20game%20graphics
 
 "the free sound project":http://www.freesound.org/
 
