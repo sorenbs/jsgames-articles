@@ -16,6 +16,8 @@
 
 "Aves Engine":http://www.insidesocialgames.com/2010/09/24/zynga-acquires-dextrose-aves-engine-html5/ owned by zynga
 
+"more":https://gist.github.com/768272
+
 *services*
 
 "tapjs":http://tapjs.com/ hosting platform, online storage, leaderboards
@@ -24,13 +26,19 @@
 
 "PlayerIO":http://playerio.com/ multiplayer, payments, online storage [Flash-only]
 
-*Art*
+*Art and sound*
 
 "Lots of art":http://opengameart.org/
+
+"Cool collection of game tiles"http://www.lostgarden.com/search/label/free%20game%20graphics
+
+"the free sound project":http://www.freesound.org/
 
 *Articles*
 
 "Rewriting a flash game to use Crafty.js":http://joshblog.net/2011/01/11/flash-to-html5-javascript-game-conversion-gridshock/
+
+"Network architecture":http://udn.epicgames.com/Three/NetworkingOverview.html
 
 *Video*
 
@@ -41,6 +49,8 @@
 "Paul Bakaus again":http://jsconfeu.blip.tv/file/4244325/
 
 "particles, smoke, animations":http://vimeo.com/22549391
+
+"google io 2011":http://io-2011-html5-games-hr.appspot.com/#105
 
 *Discussions*
 
