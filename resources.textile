@@ -34,6 +34,8 @@
 
 "the free sound project":http://www.freesound.org/
 
+"japanese style rpg tiles":http://untamed.wild-refuge.net/rpgxp.php
+
 *Articles*
 
 "Rewriting a flash game to use Crafty.js":http://joshblog.net/2011/01/11/flash-to-html5-javascript-game-conversion-gridshock/
@@ -50,7 +52,7 @@
 
 "particles, smoke, animations":http://vimeo.com/22549391
 
-"google io 2011":http://io-2011-html5-games-hr.appspot.com/#105
+"google io 2011":http://blog.sethladd.com/2011/05/source-code-slides-and-video-for-html5.html
 
 *Discussions*
 
