@@ -36,11 +36,15 @@
 
 "japanese style rpg tiles":http://untamed.wild-refuge.net/rpgxp.php
 
+"And more":http://gamedev.stackexchange.com/questions/20/where-can-i-find-free-sprites-and-images
+
 *Articles*
 
 "Rewriting a flash game to use Crafty.js":http://joshblog.net/2011/01/11/flash-to-html5-javascript-game-conversion-gridshock/
 
 "Network architecture":http://udn.epicgames.com/Three/NetworkingOverview.html
+
+"Blogs":http://gamedev.stackexchange.com/questions/3223/game-development-blogs
 
 *Video*
 
