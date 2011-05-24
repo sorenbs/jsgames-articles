@@ -14,7 +14,7 @@ The following code will create the player entity. The Ape component provides col
 
 The entity is positioned in the bottom left corner and the constructors for two of the entities components are called. 
 
-.h2 Creating a component
+h2. Creating a component
 
 Lets build the LeftControls component right away to get our player moving:
 
@@ -58,7 +58,7 @@ Now for the Ape component that adds animations and collision detection:
 
 We setup four animations in the same way the flower animation was set up in a previous article by specifying the position of first frame of the animation and the amount of frames.
 
-.h2 Binding to events
+h2. Binding to events
 
 Remember that the MultiWay component triggers a NewDirection event when the entity changes direction. 
 We use this to change the animation accordingly. You bind to an event by providing a function that should be called when the event is triggered. If the event ha any data associated to it, you can access it by adding a parameter to the function. In this case the direction parameter in our callback will be an object of the form {x, y} specifying current movement along x- and y-axes:
@@ -89,7 +89,7 @@ We use this to change the animation accordingly. You bind to an event by providi
                 })
 </code>
 
-.h2 Collision detection
+h2. Collision detection
 
 The next part of the Ape component deals with collision detection to prevent the user from walking through solid tiles. You might recall that when generating the world we marked bushes and flowers with a fictive component called solid.
 
