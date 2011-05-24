@@ -12,7 +12,11 @@ The following code will create the player entity. The Ape component provides col
                 .Ape();
 </code>
 
-The entity is positioned in the bottom left corner and the constructors for two of the entities components are called. Lets build the LeftControls component right away to get our player moving:
+The entity is positioned in the bottom left corner and the constructors for two of the entities components are called. 
+
+.h2 Creating a component
+
+Lets build the LeftControls component right away to get our player moving:
 
 <code>
     Crafty.c("LeftControls", {
@@ -35,9 +39,9 @@ init is a magic function that is called by crafty right after a new entity has b
 
 When you want to be able to change the behavior of the component in different entities you need some way to pass a parameter the initialization code. For this purpose it is convention to create a constructor that must be called when a entity is created. In this case the variability point is the speed of the entity.
 
-We take advantage of the Multiway component that is part of Crafty. It is initialized by calling its constructor with two arguments: an integer specifying speed and an object with mappings from keyboard input to a direction. In this case we map W-A-S-D to up-left-down-right. The multiway component binds a function to the enterframe event and moves the entity as needed. It also triggers an event when direction changes. we will use this in the Ape component to animate the player when walkink.
+We take advantage of the Multiway component that is part of Crafty (0.4.3+). It is initialized by calling its constructor with two arguments: an integer specifying speed and an object with mappings from keyboard input to a direction. In this case we map W-A-S-D to up-left-down-right. The multiway component binds a function to the enterframe event and moves the entity as needed. It also triggers an event when direction changes. we will use this in the Ape component to animate the player when walking.
 
-Notice how we return the entity object in the leftControls constructor. This convention enables us to chain component constructor calls as we did in the player1 entity: .leftControls(1).Ape();. This convention is follwed throughout the crafty code base and i suggest you do as well.
+Notice how we return the entity object in the leftControls constructor. This convention enables us to chain component constructor calls as we did in the player1 entity: .leftControls(1).Ape();. This convention is followed throughout the crafty code base and i suggest you do as well.
 
 Now for the Ape component that adds animations and collision detection:
 
@@ -54,8 +58,10 @@ Now for the Ape component that adds animations and collision detection:
 
 We setup four animations in the same way the flower animation was set up in a previous article by specifying the position of first frame of the animation and the amount of frames.
 
+.h2 Binding to events
+
 Remember that the MultiWay component triggers a NewDirection event when the entity changes direction. 
-We use this to change the animation acordingly. The direction parameter in our callback will be an object of the form {x, y} specifying current movement along x- and y-axes.
+We use this to change the animation accordingly. You bind to an event by providing a function that should be called when the event is triggered. If the event ha any data associated to it, you can access it by adding a parameter to the function. In this case the direction parameter in our callback will be an object of the form {x, y} specifying current movement along x- and y-axes:
 
 <code>
                 //change direction when a direction change event is received
@@ -83,6 +89,8 @@ We use this to change the animation acordingly. The direction parameter in our c
                 })
 </code>
 
+.h2 Collision detection
+
 The next part of the Ape component deals with collision detection to prevent the user from walking through solid tiles. You might recall that when generating the world we marked bushes and flowers with a fictive component called solid.
 
 Craftys collision detection works on the level of components. You specify the name of a component, and whenever the entity collides with an entity with that component your callback is called.
@@ -94,7 +102,7 @@ Craftys collision detection works on the level of components. You specify the na
 </code>
 
 The collision check is run on each enterframe. When collision is detected, the entity has already walked into a solid tile, so we have to move it out again to do this we have to know it's direction and speed. 
-We can get this information from private variables provided by the LeftControls component, but that is a bit clumpsy. 
+We can get this information from private variables provided by the LeftControls component, but that is a bit clumsy.
 Also the above approach has the problem that the collision detection is done after the unit has moved in bot x- and -y direction. If a collision is detected we have no choice but to move the unit back to where it came from, even if movement along one of the axes would have been valid.
 
 You probably guessed it - there is a better way to do it :-)
@@ -112,7 +120,7 @@ The MultiWay component triggers an event every time the unit has moved either on
 In the next article we will build a bombDropper component. this last bit of the Ape component is a teaser for you:
 
 <code>
-				.onHit("fire", function() {
+                .onHit("fire", function() {
                     this.destroy();
 					// Subtract life and play scream sound :-)
                 });
@@ -121,7 +129,8 @@ In the next article we will build a bombDropper component. this last bit of the 
     });
 </code>
 
-Let's put two players on the map by extendign the main scene:
+
+Let's put two players on the map by extendign the main scene a bit:
 
 <code>
     Crafty.scene("main", function () {
@@ -142,5 +151,5 @@ Let's put two players on the map by extendign the main scene:
     });
 </code>
 
-
+Building a LeftControls component is left as an exercise...
 

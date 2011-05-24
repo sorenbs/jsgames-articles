@@ -4,9 +4,9 @@ Take a look at our sprite sheet:
 
 !bananabomber-sprites.png!
 
- As our game is tile based, all the graphic elements has the same size: 16x16 pixels. Some of the sprites are single pictures and some (like the player) are part of an animation. In a flash game you would create animations by drawing images on consecutive frames in a movieclip, and as you will see shortly Crafty has a similar concept.
+As our game is tile based, all the graphic elements have the same size: 16x16 pixels. Some of the sprites are single pictures and some (like the player) are part of an animation. In a flash game you would create animations by drawing images on consecutive frames in a movie clip, and as you will see shortly Crafty has a similar concept.
 
- To be able to work with these sprites in Crafty we must cut them out of the sheet and give them names:
+To be able to work with these sprites in Crafty we must cut them out of the sheet and give them names:
 
 <code>
     //turn the sprite map into usable components
@@ -46,7 +46,7 @@ I will step through the generateWorld method little by little as it shows severa
                     .attr({ x: i * 16, y: j * 16, z:1 });
 </code>
 
-First we create some grass background. We use the 2D and DOM components to give the entity coordinates and the ability to draw itself to the stage. We also randomly asign it one of the grass1...4 sprite components we have just defined. Any component defined via Crafty.sprite() will automatically instruct either the DOM or the Canvas component to draw it on the stage. Finally we call the attr function on the new entity that will set x and y coordinates. As in flash, the z value specifies what element should be in front when two or more are overlapping. The one with highest z wil be on the top, so we assign the background something low.
+First we create some grass background. We use the 2D and DOM components to give the entity coordinates and the ability to draw itself to the stage. We also randomly assign it one of the grass1...4 sprite components we have just defined. Any component defined via Crafty.sprite() will automatically instruct either the DOM or the Canvas component to draw it on the stage. Finally we call the attr function on the new entity that will set x and y coordinates. As in flash, the z value specifies what element should be in front when two or more are overlapping. The one with highest z will be on the top, so we assign the background something low.
 
 To provide a closed playing field for the game we add some bushes around the edges, much the same way as the grass:
 
@@ -77,7 +77,7 @@ Let's get some more interesting stuff on the stage. Like flowers dancing in the 
 
 
 The flower component adds the flower sprite to the entity. The Animate component adds *surprise, surprise* animation capabilities to the flower. This is used by calling the animate() function on the entity. The first call creates an animation called wind that starts in column 0, row 1 (just as the flower sprite itself) and spans 3 columns. To learn about how to setup more advanced animations have a look in the documentation. 
-The second call starts the animation, specifying that it should last 80 frames and play forever(replace -1 with a positive int to specify a number of times the animation should repeat before stopping).
+The second call starts the animation, specifying that it should last 80 frames and play forever (replace -1 with a positive int to specify a number of times the animation should repeat before stopping).
 
 explodable and solid are tagging components. That is they don't have an implementation and are simply used to mark an entity of a given kind. This works very well with Craftys collision functionality that can detect collision with entities that have a given component. We will have a look at that in a later article.
 
@@ -95,7 +95,7 @@ We will finish this article by adding a grid of bushes in true bomberman style:
 
 </code>
 
-Have a look at our wonderfull garden:
+Have a look at our wonderful garden:
 
 !bananabomber-1.png!
 

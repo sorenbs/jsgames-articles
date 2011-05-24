@@ -2,8 +2,10 @@
 
 So - let's get going!
 
-First you need to grab the latest release of the "crafty":http://www.craftyjs.com engine. At the moment this is 0.4.2. Put the crafty.js file in your working directory.
+First you need to grab the latest release of the "crafty":http://www.craftyjs.com engine. At the moment this is 0.4.2. (We are using some stuff that is not yet available in a release, so you should download the "SNAPSHOT":https://s3.amazonaws.com/craftyjs/crafty-SNAPSHOT.js instead). Put the crafty.js file in your working directory.
 We will be working on a uncompressed version to make it easier to dig in and see what is going on. When the game is ready to be released we can replace it with a minified version that is much smaller.
+
+The game and articles is a work in progress. You can download the latest sources for the game from the "github repo":https://github.com/sorenbs/bananabomber/blob/master/game.js
 
 Now create the html file that will host the game:
 
@@ -32,12 +34,12 @@ The game skeleton is pretty simple:
 window.onload = function () {
     //start crafty
     Crafty.init(400, 336);
-    //Crafty.canvas();
+    //Crafty.canvas.init();
 };
 </code>
 
-If you are familiar with javascript you will recognise this way of declaring a function that will get executed when the browser is done loading the page. In that way Crafty is no different from any other javascript you would write.
-Crafty.init(with, height) is where Crafty does it's initialisation stuff that is needed before the game can run.
+If you are familiar with javascript you will recognize this way of declaring a function that will get executed when the browser is done loading the page. In that way Crafty is no different from any other javascript you would write.
+Crafty.init(with, height) is where Crafty does it's initialization stuff that is needed before the game can run.
 We are going to create a tile-based game so the with and height is set to multiples of 16 which is the size of the tiles.
 
 There are two ways of getting images onto the screen: 
@@ -45,11 +47,11 @@ There are two ways of getting images onto the screen:
 # Using a canvas element that is like a big square of screen estate that you get to draw pixels on or 
 # using normal dom elements that you can manipulate using css and javascript but is drawn to the screen by the browser. 
 
-It turns out that the DOM method is fastet in most cases, but if you want to use canvas you need to call Crafty.canvas() first. As you will see later Crafty abstracts away most differences between DOM and canvas, so it is a matter of changing a single variable if you decide to change later.
+It turns out that the DOM method is fastest in most cases, but if you want to use canvas you need to call Crafty.canvas.init() first. As you will see later Crafty abstracts away most differences between DOM and canvas, so it is a matter of changing a single variable if you decide to change later.
 
 h2. Scenes
 
-To organise different parts of the game Crafty has a notion of scenes. Each level of a game would fit nicely in a scene as would the menu, highscore list etc. 
+To organize different parts of the game Crafty has a notion of scenes. Each level of a game would fit nicely in a scene as would the menu, high score lists etc. 
 For our simple game we will just have a loading scene and a game scene:
 
 <code>
@@ -88,11 +90,11 @@ The first thing to do in the game scene is to populate the world with background
 
 h2. Components
 
-In programming it is quite usual to use an approach called Object Oriented Programming, OOP where code is organised in hierachies of classes that can inherit functionality from ancestors while providing new functionality itself. Flash adobted this approach with AS3 released some years ago. This way of organising code has some problems though and hence Crafty takes a different approach.
+In programming it is quite usual to use an approach called Object Oriented Programming, OOP where code is organised in hierarchies of classes that can inherit functionality from ancestors while providing new functionality itself. Flash adopted this approach with AS3 released some years ago. This way of organizing code has some problems though and hence Crafty takes a different approach.
 
-Crafty provides a system very simmilar to what is known as mixins, multiple inheritance or traits depending on the specific language. An easy way to think about this is that an entity (like say the player or an enemy) is composed of many reusable components that enhances the entity with some new functionality. One way to add components to an entity is to call Crafty.e(string) which will create a new entity with the functionality provided by the comma-separated list of components specified in the string parameter. 
+Crafty provides a system very similar to what is known as mixins, multiple inheritance or traits depending on the specific language. An easy way to think about this is that an entity (like say the player or an enemy) is composed of many reusable components that enhance the entity with some new functionality. One way to add components to an entity is to call Crafty.e(string) which will create a new entity with the functionality provided by the comma-separated list of components specified in the string parameter. 
 
-So what we did in the loading scene to get the background is we created an entity with the components 2D, DOM and Text. 2D provides functionality around positioning in 2d space(x, y, etc). DOM provides functionality that will automatically draw the entity to the screen using dom elements, and Text... i think you guessed it. These components are defined in the crafty.js file and you can go have a look if you are curious, but we will get back to how these components are created in a later article.
+So what we did in the loading scene to get the background is we created an entity with the components 2D, DOM and Text. 2D provides functionality around positioning in 2d space(x, y, etc.). DOM provides functionality that will automatically draw the entity to the screen using dom elements, and Text... i think you guessed it. These components are defined in the crafty.js file and you can go have a look if you are curious, but we will get back to how these components are created in a later article.
 
 
 
