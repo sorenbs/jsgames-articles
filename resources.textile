@@ -90,3 +90,8 @@
 
 "html5contest":http://www.html5contest.com/
 
+*Editors*
+
+"Komodo Edit":http://www.activestate.com/komodo-edit My favorite at the moment
+
+"WebStorm":http://www.jetbrains.com/webstorm/ Very featyre rich (warnings, code completion etc.) pricy.
