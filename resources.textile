@@ -18,6 +18,12 @@
 
 "more":https://gist.github.com/768272
 
+*Libraries*
+
+"box2dweb":http://code.google.com/p/box2dweb/
+
+"motion.js":https://github.com/tmpvar/motionjs
+
 *services*
 
 "tapjs":http://tapjs.com/ hosting platform, online storage, leaderboards
@@ -34,6 +40,8 @@
 
 "the free sound project":http://www.freesound.org/
 
+"CC music (new age)":http://www.vincentbernay.com/oursvincemusic/en/free-music/around.html
+
 "japanese style rpg tiles":http://untamed.wild-refuge.net/rpgxp.php
 
 "Isometric city tiles":http://www.vectorstock.com/artist-portfolio/maraga/most-downloaded/1
@@ -49,6 +57,8 @@
 "Blogs":http://gamedev.stackexchange.com/questions/3223/game-development-blogs
 
 *Video*
+
+"Rob Hawkes":http://marakana.com/forums/html5/general/387.html
 
 "Open Web Gaming Special conference":http://lanyrd.com/2010/gameonlondon/schedule/
 
@@ -81,6 +91,8 @@
 "JSConf":http://lanyrd.com/2011/jsconf/ US
 
 "onGameStart":http://lanyrd.com/2011/ongamestart/ Poland
+
+"newgameconf":http://www.newgameconf.com/
 
 *Games*
 
