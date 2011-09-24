@@ -37,7 +37,7 @@ These functions are added to new entities that are created with this component, 
 This means that the this keyword will point to the specific entity the function is called on. 
 init is a magic function that is called by crafty right after a new entity has been created.
 
-When you want to be able to change the behavior of the component in different entities you need some way to pass a parameter the initialization code. For this purpose it is convention to create a constructor that must be called when a entity is created. In this case the variability point is the speed of the entity.
+When you want to be able to change the behavior of the component in different entities you need some way to pass a parameter to the initialization code. For this purpose it is convention to create a constructor that must be called when a entity is created. In this case the variability point is the speed of the entity.
 
 We take advantage of the Multiway component that is part of Crafty (0.4.3+). It is initialized by calling its constructor with two arguments: an integer specifying speed and an object with mappings from keyboard input to a direction. In this case we map W-A-S-D to up-left-down-right. The multiway component binds a function to the enterframe event and moves the entity as needed. It also triggers an event when direction changes. we will use this in the Ape component to animate the player when walking.
 
@@ -98,7 +98,7 @@ Craftys collision detection works on the level of components. You specify the na
 <code>
                 .onHit("solid", function () {
                     //Move unit out of solid tile
-                }).
+                })
 </code>
 
 The collision check is run on each enterframe. When collision is detected, the entity has already walked into a solid tile, so we have to move it out again to do this we have to know it's direction and speed. 
@@ -151,5 +151,5 @@ Let's put two players on the map by extendign the main scene a bit:
     });
 </code>
 
-Building a LeftControls component is left as an exercise...
+Building a RightControls component is left as an exercise...
 
